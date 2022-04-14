@@ -1,0 +1,392 @@
+
+
+@font-face {
+    font-family: 'sharp_grotesklight_20';
+    src: url('../font/sharpgrotesk-light20-webfont.woff2') format('woff2'),
+         url('../font/sharpgrotesk-light20-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sharp_groteskmedium_25';
+    src: url('../font/sharpgrotesk-medium25-webfont.woff2') format('woff2'),
+         url('../font/sharpgrotesk-medium25-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sharp_groteskmedium_20';
+    src: url('../font/sharpgrotesk-medium20-webfont.woff2') format('woff2'),
+         url('../font/sharpgrotesk-medium20-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sharp_grotesklight_italic_20';
+    src: url('../font/sharpgrotesk-lightitalic20-webfont.woff2') format('woff2'),
+         url('../font/sharpgrotesk-lightitalic20-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@keyframes entrata {
+    from {
+        opacity: 0;
+        transform: translateY(40px)
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
+
+@keyframes uscita {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+body,
+html {
+    font-family: 'sharp_grotesklight_20', sans-serif;
+    color: white;
+    line-height: 1.6;
+}
+
+strong {
+    font-family: 'sharp_groteskmedium_25', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+button {
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    height: 60px;
+    border: 2px solid white;
+    margin: 30px auto;
+    padding: 15px 30px 15px 30px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.logo {
+    position: fixed;
+    left: 30px;
+    top: 30px;
+    opacity: 0.7;
+}
+
+.active {
+    opacity: 1;
+}
+
+.inactive {
+    opacity: 0.2;
+}
+
+.about-section {
+    padding-top: 20vh;
+    font-size: 22px;
+}
+
+.titolo {
+    font-family: 'sharp_groteskmedium_25', sans-serif;
+    font-size: 58px;
+    line-height: 72px;
+}
+
+.cta {
+    border-bottom: 2px solid;
+    line-height: 46px;
+    font-size: 44px;
+    margin-bottom: 100px;
+}
+
+.testo p {
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.descrizione-intro {
+    font-size: 22px;
+    font-weight: 200;
+    margin-top: 20px;
+}
+
+.gif-animata {
+    animation: 2s entrata;
+   
+}
+
+.punti-personaggio{
+    border: 1px solid white;
+}
+
+.bordo {
+     border-bottom: 1px solid white;
+}
+
+.bordo-sopra{
+        border-bottom: 0;
+        border-top: 1px solid white;
+}
+
+.punti-forza {
+    padding: 20px;
+}
+
+.punti-forza p{
+    margin-bottom: 0;
+}
+
+.circle {
+    height: 6px;
+    width: 6px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 12px;
+}
+
+.bullets {
+    user-select: none;
+    pointer-events: none;
+}
+
+#controlli {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    animation-name: entrata;
+    animation-duration: 1s;
+}
+
+#skip-controller {
+    display: inline-block;
+    cursor: pointer;
+}
+
+#mute-controller {
+    display: inline-block;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#avanzamento {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    animation-name: entrata;
+    animation-duration: 3s;
+}
+
+#start p {
+    vertical-align: middle;
+    text-align: center;
+    margin: 300px 0px 25px 0px;
+    font-size: 60px;
+    font-weight: 300;
+}
+
+#startbtn {
+    cursor: pointer;
+    width: 160px;
+    height: 60px;
+    border: 2px solid white;
+    margin: 50px auto;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#startbtn:hover {
+    opacity: 0.7;
+}
+
+#questions-container {
+    margin-top: 200px;
+    font-size: 46px;
+    line-height: 50px;
+    font-weight: 300;
+    animation-name: entrata;
+    animation-duration: 2s;
+}
+
+.risposte {
+    
+}
+
+a {
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightgray;
+    text-decoration: none;
+}
+
+#option1 {
+    float: left;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-right: 80px;
+    border-bottom: 2px solid;
+}
+
+#option1:hover {
+    color: lightgray;
+}
+
+#option2 {
+    float: left;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 50px;
+    margin-right: 40px;
+    border-bottom: 2px solid;
+}
+
+#option2:hover {
+    color: lightgray;
+}
+
+.top-menu {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 16px;
+    border-bottom: 1px solid white;
+}
+
+.risorse {
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.immagine-personaggio {
+    position: relative;
+    bottom: 6vh;
+}
+
+.personaggio-section {
+    padding-top: 20vh;
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.citazione p {
+    max-width: 600px;
+    font-family: 'sharp_grotesklight_italic_20', sans-serif;
+    margin-bottom: 0px;
+}
+
+
+/* MEDIA QUESRYS */
+
+
+
+@media (max-width: 576px) {
+
+    .titolo {
+        font-size: 44px;
+        line-height: 54px;
+    }
+
+    .testo p {
+        font-size: 20px;
+    }
+
+    .descrizione-intro {
+        font-size: 18px;
+    }
+    
+    #questions-container {
+    margin-top: 10vh;
+    font-size: 34px;
+    line-height: 36px;
+    font-weight: 300;
+    animation-name: entrata;
+    animation-duration: 2s;
+}
+    
+}
+
+@media (max-width: 768px) {
+
+    .personaggio-section {
+        padding-top: 0vh;
+        font-weight: 200;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+
+    .immagine-personaggio {
+        position: fixed;
+        bottom: 5vh;
+        transform: translateX(-10vw)
+    }
+
+}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {
+    .bordo {
+        border-bottom: 0;
+        border-right: 1px solid white;
+}
+
+}
+
+
